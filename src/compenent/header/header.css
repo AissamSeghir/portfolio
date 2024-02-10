@@ -1,0 +1,92 @@
+
+nav{
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+ul li a{
+
+    font-size: 20px;
+    color: var(--title);
+    cursor: pointer;
+}
+
+ul li a:hover{
+    color: var(--btncolor);
+}
+
+.fa-bars{
+    display: none;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.fixed{
+
+    position: fixed;
+    inset: 0;
+    background-color: rgb(33,37,41,0.8);
+    z-index: 11;
+}
+
+@keyframes move{
+    0%{scale: 0;}
+    60%{scale: 1.1;}
+    100%{scale: 1;}
+}
+
+.fixed .model{
+    width: 85%;
+    margin: auto;
+    background-color:rgb(24, 24, 27) ;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    animation: move 1.5s 1;
+}
+
+.fa-x{
+    left: 80%;
+    font-size: 25px;
+    color: aliceblue;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: end;
+}
+
+.fa-x:hover{
+    color: var(--btncolor);
+    scale: 1;
+}
+
+.fixed .model ul li{
+
+    padding: 15px 0;
+}
+
+.fixed .model ul li a{
+    transition: 1.1s;
+}
+
+@media (max-width:620px){
+
+    .menu{
+        display: none;
+    }
+
+    .fa-bars{
+        display: block;
+    }
+}

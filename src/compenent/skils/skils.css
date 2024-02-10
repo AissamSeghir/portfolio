@@ -1,0 +1,70 @@
+.skils{
+    margin-bottom: 25px;
+}
+
+.skils #titlesk {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.skils .container {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.card-sk {
+    width: 50%;
+    background-color: var(--btncolor);
+    border-radius: 9px;
+    padding: 10px 20px;
+}
+
+.card-sk h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.skil-sh {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+
+.skil-sh:last-child {
+    border: none;
+}
+
+.skil-sh h4 {
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.skil-sh i {
+    font-size: 27px;
+}
+
+.skil-inf {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 811px) {
+    .skils .container {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .card-sk {
+        width: 100%;
+        margin-bottom: 13px;
+    }
+}

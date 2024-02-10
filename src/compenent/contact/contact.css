@@ -1,0 +1,70 @@
+.contact .container{
+    height: 85vh;
+    align-items: center;
+}
+.contact .container{
+    justify-content: space-between;
+}
+
+.contact h3{
+    text-align: center;
+    font-size: 35px;
+    color: var(--title);
+}
+
+form{
+    width: 320px;
+}
+
+.contact-form{
+    position: relative;
+    height: 4rem;
+    margin-bottom: 15px;
+}
+
+form input,textarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid aliceblue;
+    background: none;
+    color: var(--title);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    z-index: 1;
+    font-size: 20px;
+}
+
+label{
+    position: absolute;
+    top: -0.75rem;
+    padding: 0.25rem;
+    left: 1.15rem;
+    color: var(--title);
+    background-color: var(--bgcolor);
+    z-index: 10;
+}
+
+textarea{
+    height: 11.5rem;
+    resize: none;
+}
+
+form button{
+    margin-top: 8rem;
+}
+
+form h4{
+    margin-top: 8px;
+    color: aliceblue;
+}
+
+@media(max-width:741px){
+    .contact .container{
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+footer{
+    padding: 20px 0;
+}
+
+footer .rs-social{
+
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 15px auto;
+    height: 100%;
+}
+
+footer h4{
+
+    font-size: 15px;
+    text-align: center;
+    font-weight: 100;
+    color: var(--title);
+    line-height: 1.6;
+}

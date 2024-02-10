@@ -1,0 +1,114 @@
+.hero{
+
+    align-items: center;
+    height: 80vh;
+}
+.hero-info{
+
+    color: var(--title);
+    margin-right: 20px;
+}
+
+.hero-info h3{
+    color: var(--btncolor);
+    font-size: 35px;
+    margin: 15px 0;
+    font-weight: 800;
+}
+
+.hero-info h4{
+
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.hero-info p{
+    margin-bottom: 12px;
+    line-height: 1.2;
+    letter-spacing: 1.6px;
+}
+
+button{
+
+    background-color: var(--btncolor);
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 9px;
+    color: black;
+    border: none;
+}
+
+button a{
+    color: black;
+}
+
+.rs-social{
+    display: grid;
+    margin-right: 17px;
+    height: 240px;
+    align-items: center;
+}
+
+.rs-social a{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+@keyframes animationpr{
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; 
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%; 
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%; 
+    }
+}
+
+.img-profil{
+
+    background: url('../../assests/profil.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    animation: animationpr 8s ease-in-out infinite 1s;
+}
+
+@keyframes slideRight {
+    from {
+      transform: translateX(-300%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+@media (max-width:770px){
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    .rs-social{
+        animation: slideRight 1s ease-in-out;
+    }
+}
+
+@media (max-width:821px) and (min-width:770px){
+    .hero-info h3{
+        font-size: 28px;
+    }
+
+}
+@media (max-width:414px){
+    .hero .img-profil{
+        width: 250px;
+        height: 250px;
+        animation: animationpr 8s ease-in-out infinite 1s;
+    }
+
+}
